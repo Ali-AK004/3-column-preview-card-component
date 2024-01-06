@@ -1,0 +1,122 @@
+:root {
+  --clr-Bright_Orange: hsl(31, 77%, 52%);
+  --clr-Dark_Cyan: hsl(184, 100%, 22%);
+  --clr-ult_Dark_Cyan: hsl(179, 100%, 13%);
+  --clr-P: hsla(0, 0%, 100%, 0.75);
+  --clr-bg-hd-btn: hsl(0, 0%, 95%);
+  --ff-header: "Big Shoulders Display", sans-serif;
+  --ff-P: "Lexend Deca", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (width < 767px) {
+  body {
+    margin: 20px 10px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box {
+  padding: 2rem;
+}
+
+.container .orange {
+  background-color: var(--clr-Bright_Orange);
+}
+
+.container .orange a {
+  color: var(--clr-Bright_Orange);
+}
+
+.container .green {
+  background-color: var(--clr-Dark_Cyan);
+}
+
+.container .green a {
+  color: var(--clr-Dark_Cyan);
+}
+
+.container .dark {
+  background-color: var(--clr-ult_Dark_Cyan);
+}
+
+.container .dark a {
+  color: var(--clr-ult_Dark_Cyan);
+}
+
+img {
+  width: 50px;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: var(--ff-header);
+  color: var(--clr-bg-hd-btn);
+  margin-bottom: 1.5rem;
+  font-size: 36px;
+}
+
+p {
+  font-family: var(--ff-P);
+  line-height: 2;
+  color: var(--clr-P);
+  font-size: 15px;
+  margin-bottom: 7rem;
+}
+
+@media screen and (width < 768px) {
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.btn a {
+  text-decoration: none;
+  background-color: var(--clr-bg-hd-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-family: var(--ff-P);
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.btn a:hover {
+  background-color: transparent;
+  border: 1px solid var(--clr-bg-hd-btn);
+  color: var(--clr-bg-hd-btn);
+}

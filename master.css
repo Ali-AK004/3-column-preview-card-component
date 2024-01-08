@@ -95,6 +95,11 @@ p {
   }
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .btn {
   display: flex;
   justify-content: flex-start;
